@@ -1,0 +1,42 @@
+div.cards {
+    width: 300px;
+    height: 200px;
+    border: 1px solid rgb(243, 243, 243);
+    z-index: 4;
+    float: left;
+    margin: 10px 0px 0px 10px;
+    -moz-box-shadow: 5px 5px 5px rgba(163, 163, 163, 0.6);
+    -webkit-box-shadow: 5px 5px 5px rgba(163, 163, 163, 0.6);
+    box-shadow: 5px 5px 5px rgba(163, 163, 163, 0.6);
+}
+
+div.items {
+    overflow: hidden;
+    padding: 15px 15px 15px 15px;
+}
+
+div.cards:hover {
+    transform: scaleY(1.03) scaleX(1.03);
+    cursor: pointer;
+}
+
+div.card-title {
+    margin: 5px 0px 0px 10px;
+    color: rgb(103, 103, 103);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.card-description {
+    margin: 20px 0px 0px 20px;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100px;
+}
+
+div.card-cost {
+    float: right;
+    margin-right: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}

@@ -1,0 +1,9 @@
+<h3 class="page-header">Cloud Services</h3>
+
+<div class="items">
+    <div class="cards" *ngFor="let item of servicesData; index as i" (click)="openApp(i)">
+        <div class="card-title"><i class="fa fa-cog fa-fw"></i> {{item.name}}</div>
+        <div class="card-description">{{item.shortDescription}}</div>
+        <div class="card-cost">Starts from {{item.currency}} {{item.minCost}}</div> 
+    </div>
+</div>

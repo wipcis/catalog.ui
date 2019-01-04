@@ -1,0 +1,27 @@
+<h3 class="page-header">What else do you want to see?</h3>
+
+<form class="contribute" method="POST" action="#" role="form">
+        <div *ngIf="errorMessage!=null" class="alert alert-danger">
+            {{ errorMessage }}
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="item">Catalog item</label>
+            <input id="item" type="text" maxlength="50" class="form-control" placeholder="Short title for the catalog item"
+                   [(ngModel)]="contribute.title" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="outcomes">Outcomes Expected</label>
+            <textarea id="outcomes"  rows="10" class="form-control" placeholder="Detailed outcomes expected"
+                   [(ngModel)]="contribute.outcomes" [ngModelOptions]="{standalone: true}"></textarea>
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="priceRange">Expected Price Range</label>
+            <input id="priceRange" type="text" maxlength="13" class="form-control" placeholder="Approx price range"
+                   [(ngModel)]="contribute.priceRange" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="form-group">
+            <button (click)="onSubmit()" id="contributeSubmit" type="submit" class="btn btn-info btn-block">
+                Submit Request
+            </button>
+        </div>
+    </form>

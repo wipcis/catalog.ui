@@ -1,0 +1,8 @@
+<h3 class="page-header">Find the best patterns that suits your application</h3>
+
+<div class="items">
+        <div class="cards" *ngFor="let item of patternsData; index as i" (click)="openApp(i)">
+                <div class="card-title"><i class="fa fa-cog fa-fw"></i> {{item.name}}</div>
+                <div class="card-description">{{item.shortDescription}}</div>
+        </div>
+</div>
